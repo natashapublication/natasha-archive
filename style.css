@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Fabrik-Regular', sans-serif;
+	font-size:2rem;
+	letter-spacing: 0.5px;
+	line-height: 1.2;
+	margin:0px;
+	padding:0px;
+	overflow: hidden;
+}
+
+::selection {
+	background-color:white;
+}
+
+.num {font-family: 'GT America Mono-Regular', monospace;
+font-size:1.02em}
+
+.overlay {
+	z-index:2;
+	position:fixed;
+	width: 100%;
+	height: auto;
+	max-width: 1440px;
+	max-height:999px;
+	pointer-events: none;
+	margin: auto;
+}
+
+.cover {
+	width: 66%;
+	display: block;
+	}
+
+.drag {
+	cursor:move;
+}
+
+#menu {
+	width: 100%;
+	position:fixed;
+	top: 1rem;
+	right:1rem;
+	z-index:2;
+	text-align: right;
+	font-size:3rem;
+
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.issue {
+	z-index:0;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+
+.issue.one {
+	background-color:#fff580;
+}
+.issue.two {
+	background-color:#ee604d;
+}
+.issue.three {
+	background-color:#94d6f1;
+}
+
+.content {
+	margin: 1rem;
+}
+
+.issue-number {
+	position:fixed;
+	bottom:40px;
+	font-size: 98px;
+	font-family: 'GT America Mono-Regular', monospace;
+	mix-blend-mode: difference;
+	display: none;
+}
+
+.next {
+	position:fixed;
+	top:48%;
+	right:20px;
+	font-size: 48px;
+}
+
+.prev {
+	position:fixed;
+	top:48%;
+	left:20px;
+	font-size: 48px;
+}
+
+.largeV {width:72%;}
+.largeH {width:90%;}
+.smallV {width:36%;}
+.smallH {width:45%;}
+
+.left {float:left;}
+
+.right {float:right;}
+
+
+
+.mid {
+	width: 13%;
+	margin: 12px 0 0 0;
+	float: left;
+}
+
+@font-face {
+    font-family: 'Fabrik-Regular';
+    src: url('./fabrik-regular-webfont.woff2') format('woff2'),
+url('./fabrik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'GT America Mono-Regular';
+    src: url('./gt_america_mono_regular-webfont.woff2') format('woff2'),
+url('./gt_america_mono_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+  display: inline-block;
+  position: relative;
+	text-decoration: none;
+	color:black;
+	}
+
+a:hover:after {
+	content: '';
+	position:absolute;
+	left:0;
+	display:inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 0px solid;
+}
+
+a:active {text-decoration:none;}
+
+/* Modal */
+
+.myImg {
+    cursor: pointer;
+}
+
+/* Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+	left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto 0;
+    display: block;
+    width: 100%;
+}
+
+
+/* The Close Button */
+.close {
+    position: fixed;
+    top: 12px;
+    left: 28px;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
