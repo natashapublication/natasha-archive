@@ -28,6 +28,15 @@ body {
 	background-color: rgb(250,250,250);
 }
 
+.about {
+	background-color: rgb(10,10,10);
+	color: white;
+}
+
+.about a {
+	color: white;
+}
+
 .noscroll {
 	overflow: hidden;
 }
