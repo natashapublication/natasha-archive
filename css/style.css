@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@font-face {
+    font-family: 'Fabrik-Regular';
+    src: url('/fonts/fabrik-regular-webfont.woff2') format('woff2'),
+			url('/fonts/fabrik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono-Regular';
+    src: url('/fonts/gt_america_mono_regular-webfont.woff2') format('woff2'),
+			url('/fonts/gt_america_mono_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
 	font-family: 'Fabrik-Regular', sans-serif;
 	font-size:2rem;
@@ -115,26 +132,6 @@ font-size:1.02em}
 	float: left;
 }
 
-@font-face {
-    font-family: 'Fabrik-Regular';
-    src: url('./fabrik-regular-webfont.woff2') format('woff2'),
-url('./fabrik-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'GT America Mono-Regular';
-    src: url('./gt_america_mono_regular-webfont.woff2') format('woff2'),
-url('./gt_america_mono_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 a {
   display: inline-block;
