@@ -17,6 +17,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Webdings';
+    src: url('../fonts/webdings-webfont.woff2') format('woff2'),
+			url('../fonts/webdings-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
 	font-family: 'Fabrik-Regular', sans-serif;
@@ -42,7 +50,7 @@ body {
 }
 
 ::selection {
-	background-color:white;
+	background-color:gray;
 }
 
 .num {font-family: 'GT America Mono-Regular', monospace;
@@ -148,7 +156,6 @@ font-size:1.02em}
 	bottom:40px;
 	font-size: 98px;
 	font-family: 'GT America Mono-Regular', monospace;
-	mix-blend-mode: difference;
 	display: none;
 }
 
@@ -164,12 +171,96 @@ a {
 	color:black;
 	}
 
-
+a:hover {
+  text-decoration: underline;
+}
 
 a:active {text-decoration:none;}
 
 
+.multiply {
+  mix-blend-mode: multiply;
+}
 
+figure.image-block {
+  max-width: 100%;
+  width: min-content;
+  margin: 0 auto 1em auto;
+}
+
+figcaption {
+  max-width: 100%;
+  font-size: 0.75em;
+  margin: 0.25em auto 0 auto;
+}
+
+.icon {
+  font-family: 'Webdings';
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.05em;
+  -webkit-text-stroke-color: black;
+}
+
+.block-quote {
+  margin-left:3em;
+}
+
+.footnote {
+  font-size: 0.625em;
+}
+
+ol {
+  padding: 0;
+}
+
+ol li {
+  list-style: none;
+}
+
+ol.hanging {
+  font-size: 1.5rem;
+  margin: 6rem auto;
+}
+
+.hanging li {
+  margin: 0 0 1em 0;
+}
+
+#footnotes {
+  font-size: 1.5rem;
+  margin: 6rem auto;
+  columns: 2;
+  -moz-columns: 2;
+  -moz-columns-gap: 2;
+  -webkit-columns: 2;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-break: break-word;
+}
+
+.footnotes-list {
+  padding: 0;
+  margin: 0;
+}
+
+.footnotes-list li {
+  list-style: none;
+  margin: 0 0 1em 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+.footnotes-list a {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-break: break-word;
+}
+
+.footnotereverse a {
+  text-decoration: none;
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
