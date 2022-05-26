@@ -188,6 +188,11 @@ figure.image-block {
   margin: 0 auto 1em auto;
 }
 
+figure.image-block img {
+  margin: auto;
+  width:100%;
+}
+
 figcaption {
   max-width: 100%;
   font-size: 0.75em;
